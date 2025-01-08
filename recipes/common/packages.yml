@@ -23,7 +23,7 @@ modules:
       - smartmontools
       - piper
       - corectrl
-      - ratbagd
+      - libratbag-ratbagd
       - heimdall
     remove:
       - devpod
