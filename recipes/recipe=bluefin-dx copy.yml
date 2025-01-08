@@ -1,6 +1,6 @@
 
 name: vita
-description: Custom Atomic image inspired by @tecncr
+description: Custom Atomic image inspired by @xposedrelay
 base-image: ghcr.io/ublue-os/bluefin
 image-version: latest
 modules:
