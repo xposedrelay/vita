@@ -1,0 +1,27 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: default-flatpaks
+    notify: true
+    system:
+      install:
+        - org.audacityteam.Audacity
+        - com.brave.Browser
+        - com.usebruno.Bruno
+        - io.dbeaver.DBeaverCommunity
+        - ca.desrt.dconf-editor
+        - org.gnome.Firmware
+        - com.heroicgameslauncher.hgl
+        - org.freedesktop.Piper
+        - fr.handbrake.ghb
+        - org.inkscape.Inkscape
+        - org.kde.kolourpaint
+        - org.libreoffice.LibreOffice
+        - com.obsproject.Studio
+        - org.signal.Signal
+        - com.valvesoftware.Steam
+        - com.github.unrud.VideoDownloader
+        - org.videolan.VLC
+      remove:
+        - org.gnome.Weather
+        - org.gnome.Maps
+        - com.github.rafostar.Clapper

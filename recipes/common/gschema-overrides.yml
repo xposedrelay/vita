@@ -1,0 +1,6 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: gschema-overrides
+    include:
+      - zz5-modifications-over-bluefin.gschema.override
+      - zz9-enduser-modifications.gschema.override

@@ -41,3 +41,7 @@ These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](ht
 ```bash
 cosign verify --key cosign.pub ghcr.io/xposedrelay/vita
 ```
+
+## Credits
+
+This is heavily inspired/forked from [mcubi](https://github.com/tecncr/mcubi)'s proyect by @deerf0x. <3

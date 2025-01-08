@@ -1,0 +1,7 @@
+
+name: vita-dx
+description: Custom Atomic image inspired by @tecncr
+base-image: ghcr.io/ublue-os/bluefin-dx-nvidia
+image-version: latest
+modules:
+  - from-file: common/bluefin-dx.yml
