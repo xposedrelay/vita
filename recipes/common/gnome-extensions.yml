@@ -7,6 +7,7 @@ modules:
       - "1414" # Unblank lock screen
       - "3396" # Color Picker
       - "6433" # App menu is back
+      - "517" # Caffeine
     uninstall:
       - "3193" # Blur my Shell
       - "4451" # Logo Menu
