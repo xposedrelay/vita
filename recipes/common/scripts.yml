@@ -3,4 +3,3 @@ modules:
   - type: script
     scripts:
       - papirus-folders.sh
-      - corectrl.sh
