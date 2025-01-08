@@ -1,6 +1,6 @@
 
 name: vita-dx
-description: Custom Atomic image inspired by @tecncr
+description: Custom Atomic image inspired by @xposedrelay
 base-image: ghcr.io/ublue-os/bluefin-dx-nvidia
 image-version: latest
 modules:

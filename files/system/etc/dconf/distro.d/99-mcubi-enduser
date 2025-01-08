@@ -207,13 +207,13 @@ initial-size-file-chooser=(890, 550)
 maximized=true
 
 [org/gnome/portal/filechooser/org.gnome.Settings]
-last-folder-path='/var/home/tecncr/Documents'
+last-folder-path='/var/home/xp0sed_raccoon/Documents'
 
 [org/gnome/portal/filechooser/org.gnome.TextEditor]
-last-folder-path='/var/home/tecncr/Documents'
+last-folder-path='/var/home/xp0sed_raccoon/Documents'
 
 [org/gnome/portal/filechooser/org.mozilla.firefox]
-last-folder-path='/var/home/tecncr/Downloads'
+last-folder-path='/var/home/xp0sed_raccoon/Downloads'
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Control><Alt>t'
