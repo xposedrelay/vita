@@ -3,4 +3,4 @@ modules:
   - type: script
     scripts:
       - papirus-folders.sh
-      - suvctl.sh
+      - corectrl.sh
