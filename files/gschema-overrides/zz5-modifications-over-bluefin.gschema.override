@@ -6,7 +6,7 @@ disabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'l
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'search-light@icedman.github.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry', 'unblank@sun.wxg@gmail.com', 'appmenu-is-back@fthx']
 
 [org.gnome.desktop.interface]
-accent-color="purple"
+accent-color="green"
 clock-format="24h"
 color-scheme="prefer-dark"
 cursor-theme="Yaru"
