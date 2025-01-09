@@ -6,9 +6,6 @@ modules:
       install:
         - org.audacityteam.Audacity
         - com.brave.Browser
-        - com.usebruno.Bruno
-        - io.dbeaver.DBeaverCommunity
-        - ca.desrt.dconf-editor
         - org.gnome.Firmware
         - com.heroicgameslauncher.hgl
         - org.freedesktop.Piper
@@ -21,6 +18,8 @@ modules:
         - com.valvesoftware.Steam
         - com.github.unrud.VideoDownloader
         - org.videolan.VLC
+        - dev.vencord.Vesktop
+        - org.jdownloader.JDownloader
       remove:
         - org.gnome.Weather
         - org.gnome.Maps

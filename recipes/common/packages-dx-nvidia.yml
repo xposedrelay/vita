@@ -1,0 +1,33 @@
+# yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
+modules:
+  - type: rpm-ostree
+    repos:
+      - https://negativo17.org/repos/fedora-multimedia.repo
+  - type: akmods
+    base: main
+    install:
+      - evdi
+  - type: rpm-ostree
+    install:
+      - displaylink
+      - mozilla-fira-sans-fonts
+      - papirus-icon-theme
+      - papirus-icon-theme-light
+      - papirus-icon-theme-dark
+      - epapirus-icon-theme
+      - telnet
+      - nmap
+      - netcat
+      - efivar
+      - efivar-libs
+      - smartmontools
+      - piper
+      - libratbag-ratbagd
+      - heimdall
+    remove:
+      - devpod
+      - gnome-tour
+      - input-leap
+      - input-remapper
+      - solaar
+      - solaar-udev
