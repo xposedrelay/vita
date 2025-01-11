@@ -150,6 +150,7 @@ two-finger-scrolling-enabled=true
 [org/gnome/desktop/privacy]
 remember-recent-files=true
 report-technical-problems=false
+remove-old-trash-files=true
 
 [org/gnome/desktop/sound]
 allow-volume-above-100-percent=false
