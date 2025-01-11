@@ -23,6 +23,8 @@ modules:
       - smartmontools
       - piper
       - heimdall
+      - epson-inkjet-printer-escpr
+      - epson-inkjet-printer-escpr2
     remove:
       - devpod
       - gnome-tour
