@@ -207,7 +207,6 @@ name='mission-center'
 [org/gnome/shell/keybindings/screenshot]
 binding='<Shift><Control>i'
 
-
 [org/gnome/settings-daemon/plugins/power]
 idle-dim=true
 power-saver-profile-on-low-battery=true
