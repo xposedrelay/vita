@@ -8,7 +8,6 @@ modules:
         - com.brave.Browser
         - org.gnome.Firmware
         - com.heroicgameslauncher.hgl
-        - org.freedesktop.Piper
         - fr.handbrake.ghb
         - org.inkscape.Inkscape
         - org.kde.kolourpaint

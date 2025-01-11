@@ -22,7 +22,6 @@ modules:
       - efivar-libs
       - smartmontools
       - piper
-      - libratbag-ratbagd
       - heimdall
     remove:
       - devpod

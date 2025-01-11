@@ -23,7 +23,6 @@ modules:
       - smartmontools
       - piper
       - corectrl
-      - libratbag-ratbagd
       - heimdall
     remove:
       - gnome-tour
