@@ -19,7 +19,10 @@ modules:
         - org.videolan.VLC
         - dev.vencord.Vesktop
         - org.jdownloader.JDownloader
+        - com.usebottles.bottles
+        - org.remmina.Remmina
       remove:
         - org.gnome.Weather
         - org.gnome.Maps
         - com.github.rafostar.Clapper
+        - org.gnome.Connections
