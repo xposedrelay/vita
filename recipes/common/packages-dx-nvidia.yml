@@ -9,7 +9,6 @@ modules:
       - evdi
   - type: rpm-ostree
     install:
-      - displaylink
       - mozilla-fira-sans-fonts
       - papirus-icon-theme
       - papirus-icon-theme-light
