@@ -24,6 +24,7 @@ modules:
         - org.jdownloader.JDownloader
         - com.usebottles.bottles
         - org.remmina.Remmina
+        - com.spotify.Client
       remove:
         - org.gnome.Weather
         - org.gnome.Maps
