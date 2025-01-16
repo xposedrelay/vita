@@ -26,6 +26,7 @@ modules:
         - org.remmina.Remmina
         - com.spotify.Client
         - page.kramo.Cartridges
+        - org.freedesktop.Piper
       remove:
         - org.gnome.Weather
         - org.gnome.Maps

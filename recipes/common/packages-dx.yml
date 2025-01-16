@@ -20,7 +20,7 @@ modules:
       - efivar
       - efivar-libs
       - smartmontools
-      - piper
+      - libratbag-ratbagd
       - corectrl
       - heimdall
       - epson-inkjet-printer-escpr
