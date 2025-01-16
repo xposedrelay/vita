@@ -22,6 +22,7 @@ modules:
         - com.usebottles.bottles
         - org.remmina.Remmina
         - com.spotify.Client
+        - page.kramo.Cartridges
       remove:
         - org.gnome.Weather
         - org.gnome.Maps
