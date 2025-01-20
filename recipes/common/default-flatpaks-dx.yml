@@ -27,6 +27,7 @@ modules:
         - com.spotify.Client
         - page.kramo.Cartridges
         - org.freedesktop.Piper
+        - org.strawberrymusicplayer.strawberry
       remove:
         - org.gnome.Weather
         - org.gnome.Maps
