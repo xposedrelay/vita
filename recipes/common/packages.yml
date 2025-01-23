@@ -3,6 +3,8 @@ modules:
   - type: rpm-ostree
     repos:
       - https://negativo17.org/repos/fedora-multimedia.repo
+      - https://copr.fedorainfracloud.org/coprs/hyperreal/better_fonts/repo/fedora-%OS_VERSION%/hyperreal-better_fonts-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/decathorpe/miniaturo/repo/fedora-%OS_VERSION%/decathorpe-miniaturo-fedora-%OS_VERSION%.repo
   - type: akmods
     base: main
     install:
@@ -25,6 +27,8 @@ modules:
       - heimdall
       - epson-inkjet-printer-escpr
       - epson-inkjet-printer-escpr2
+      - fontconfig-font-replacements
+      - miniaturo
     remove:
       - gnome-tour
       - input-leap
