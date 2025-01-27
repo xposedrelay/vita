@@ -2,8 +2,8 @@
 
 [org.gnome.shell]
 favorite-apps = ['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis', 'org.mozilla.firefox.desktop', 'com.brave.Browser', 'code.desktop', 'org.gnome.TextEditor', 'org.virt_manager.virt-manager']
-disabled-extensions=['blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'logomenu@aryan_k', 'tailscale@joaophi.github.com']
-enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'search-light@icedman.github.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry', 'unblank@sun.wxg@gmail.com', 'appmenu-is-back@fthx']
+disabled-extensions=['blur-my-shell@aunetx', 'logomenu@aryan_k', 'tailscale@joaophi.github.com']
+enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'search-light@icedman.github.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry', 'unblank@sun.wxg@gmail.com', 'appmenu-is-back@fthx', 'dash-to-dock@micxgx.gmail.com']
 
 [org.gnome.desktop.interface]
 accent-color="green"
