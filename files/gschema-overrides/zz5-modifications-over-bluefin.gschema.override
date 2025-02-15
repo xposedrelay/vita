@@ -5,6 +5,13 @@ favorite-apps = ['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis', 'org.mozilla.
 disabled-extensions=['blur-my-shell@aunetx', 'logomenu@aryan_k', 'tailscale@joaophi.github.com']
 enabled-extensions=['appindicatorsupport@rgcjonas.gmail.com', 'gsconnect@andyholmes.github.io', 'search-light@icedman.github.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry', 'unblank@sun.wxg@gmail.com', 'appmenu-is-back@fthx', 'dash-to-dock@micxgx.gmail.com']
 
+[org.gnome.desktop.background]
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/wallpaper.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/wallpaper.jpg'
+primary-color='092844'
+secondary-color='1F1E2D'
+
 [org.gnome.desktop.interface]
 accent-color="green"
 clock-format="24h"
