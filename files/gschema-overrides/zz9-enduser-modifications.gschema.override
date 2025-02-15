@@ -275,3 +275,6 @@ uris=['qemu:///system']
 [org/virt-manager/virt-manager/vmlist-fields]
 disk-usage=false
 network-traffic=false
+
+[org.gnome.login-screen]
+logo='/usr/share/pixmaps/gdm-watermark.png'
