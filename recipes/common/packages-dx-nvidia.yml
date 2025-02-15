@@ -28,6 +28,9 @@ modules:
       - epson-inkjet-printer-escpr2
       - fontconfig-font-replacements
       - miniaturo
+      - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
+    optfix:
+      - Bitwarden
     remove:
       - devpod
       - gnome-tour
