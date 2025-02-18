@@ -28,8 +28,7 @@ last-panel='wifi'
 window-state=(980, 640, true)
 
 [org/gnome/desktop/app-folders]
-folder-children=['Games', 'GamingUtilities', 'Utilities', 'Containers', 'Wine', 'YaST', 'Pardus', 'Development', 'ee64d17e-fc25-40f4-820a-3f8ea6c52fb3', 'd0ec232b-d2a9-4e30-a889-ff79cc47dfed', '0f1d9304-421f-4c5d-a7d3-f49481993089', '2c2dfc92-7b10-4504-aa01-d87c9ee16336', '51e578b7-1bce-4ee2-a12d-6e1025ea2cff', 'bc788aed-4aea-46bd-a398-79e0d3620fc5', '93d21bf1-d963-48fd-834c-113c81ca863e']
-
+folder-children=['Games', 'GamingUtilities', 'Utilities', 'Containers', 'Wine', 'YaST', 'Pardus', 'Development', 'ee64d17e-fc25-40f4-820a-3f8ea6c52fb3', 'd0ec232b-d2a9-4e30-a889-ff79cc47dfed', '0f1d9304-421f-4c5d-a7d3-f49481993089', '2c2dfc92-7b10-4504-aa01-d87c9ee16336', '51e578b7-1bce-4ee2-a12d-6e1025ea2cff', 'Media', '93d21bf1-d963-48fd-834c-113c81ca863e', 'Creativity']
 [org.gnome.desktop.background]
 picture-options='zoom'
 picture-uri='file:///usr/share/backgrounds/wallpaper.jpg'
@@ -76,24 +75,33 @@ translate=false
 
 [org/gnome/desktop/app-folders/folders/Games]
 categories=['Game']
-excluded-apps=['steam.desktop', 'net.lutris.Lutris.desktop', 'io.github.benjamimgois.goverlay.desktop', 'com.vysp3r.ProtonPlus.desktop', 'io.github.fastrizwaan.WineZGUI.desktop']
+excluded-apps=['steam.desktop', 'net.lutris.Lutris.desktop', 'io.github.benjamimgois.goverlay.desktop', 'com.vysp3r.ProtonPlus.desktop', 'io.github.fastrizwaan.WineZGUI.desktop', 'com.heroicgameslauncher.hgl', 'page.kramo.Cartridges']
 name='Games'
 translate=false
 
+[org/gnome/desktop/app-folders/folders/Creativity]
+categories=['Design']
+excluded-apps=['org.kde.kolourpaint', 'fr.handbrake.ghb', 'org.inkscape.Inkscape']
+translate=false
+
+[org/gnome/desktop/app-folders/folders/Downloads]
+categories=['Network']
+excluded-apps=['org.jdownloader.JDownloader', 'org.qbittorrent.qBittorrent', 'com.github.unrud.VideoDownloader']
+
 [org/gnome/desktop/app-folders/folders/GamingUtilities]
-apps=['protontricks.desktop', 'discover_overlay_configure.desktop', 'com.vysp3r.ProtonPlus.desktop', 'io.github.benjamimgois.goverlay.desktop', 'com.gerbilsoft.rom-properties.rp-config.desktop', 'steamos-nested-desktop.desktop']
+apps=['protontricks.desktop', 'discover_overlay_configure.desktop', 'com.vysp3r.ProtonPlus.desktop', 'io.github.benjamimgois.goverlay.desktop', 'com.gerbilsoft.rom-properties.rp-config.desktop', 'steamos-nested-desktop.desktop', 'com.usebottles.bottles', 'org.freedesktop.Piper']
 name='Gaming Utilities'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/Productivity]
-apps=['simple-scan.desktop', 'org.gnome.Papers.desktop', 'org.gnome.Connections.desktop']
+apps=['simple-scan.desktop', 'org.gnome.Papers.desktop', 'org.gnome.Connections.desktop', 're.sonny.Eloquent']
 name='Productivity'
 translate=false
 
 [org/gnome/desktop/app-folders/folders/Utilities]
 apps=['input-leap.desktop']
 categories=['X-GNOME-Utilities']
-excluded-apps=['com.github.tchx84.Flatseal.desktop', 'io.github.flattool.Warehouse.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.gnome.tweaks.desktop', 'firewall-config.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.World.PikaBackup.desktop', 'solaar.desktop', 'org.fedoraproject.MediaWriter.desktop', 'input-remapper-gtk.desktop', 'org.gnome.Sysprof.desktop', 'remote-viewer.desktop', 'org.gnome.Logs.desktop', 'org.gnome.Characters.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DejaDup.desktop']
+excluded-apps=['com.github.tchx84.Flatseal.desktop', 'io.github.flattool.Warehouse.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.gnome.tweaks.desktop', 'firewall-config.desktop', 'ca.desrt.dconf-editor.desktop', 'org.gnome.World.PikaBackup.desktop', 'solaar.desktop', 'org.fedoraproject.MediaWriter.desktop', 'input-remapper-gtk.desktop', 'org.gnome.Sysprof.desktop', 'remote-viewer.desktop', 'org.gnome.Logs.desktop', 'org.gnome.Characters.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.font-viewer.desktop', 'org.gnome.baobab.desktop', 'org.gnome.DejaDup.desktop', ]
 name='X-GNOME-Utilities.directory'
 translate=true
 
@@ -103,9 +111,10 @@ categories=['X-Wine', 'wine-wine']
 name='Wine'
 translate=false
 
-[org/gnome/desktop/app-folders/folders/bc788aed-4aea-46bd-a398-79e0d3620fc5]
-apps=['org.videolan.VLC.desktop', 'org.kde.kdenlive.desktop', 'org.inkscape.Inkscape.desktop', 'org.kde.kolourpaint.desktop', 'com.obsproject.Studio.desktop', 'org.audacityteam.Audacity.desktop', 'fr.handbrake.ghb.desktop', 'com.github.unrud.VideoDownloader.desktop', 'org.pulseaudio.pavucontrol.desktop']
+[org/gnome/desktop/app-folders/folders/Media]
+excluded-apps=['org.videolan.VLC.desktop', 'org.strawberrymusicplayer.strawberry', 'io.github.dzheremi2.lrcmake-gtk', ]
 name='Media'
+categories=['Media']
 translate=false
 
 [org/gnome/desktop/app-folders/folders/d0ec232b-d2a9-4e30-a889-ff79cc47dfed]
@@ -293,3 +302,16 @@ network-traffic=false
 
 [org.gnome.login-screen]
 logo='/usr/share/pixmaps/gdm-watermark.png'
+
+[org/gnome/shell/extensions/dash-to-dock]
+autohide=true
+autohide-in-fullscreen=false
+click-action='minimize'
+dash-max-icon-size='48'
+dock-fixed=false
+scroll-action='do-nothing'
+show-apps-at-top=false
+show-dock-urgent-notify=false
+show-mounts=false
+intellihide=false
+show-trash=false
