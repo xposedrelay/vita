@@ -29,6 +29,7 @@ modules:
         - org.freedesktop.Piper
         - org.strawberrymusicplayer.strawberry
         - com.rtosta.zapzap
+        - re.sonny.Eloquent
       remove:
         - org.gnome.Weather
         - org.gnome.Maps
