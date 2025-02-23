@@ -6,13 +6,14 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/hyperreal/better_fonts/repo/fedora-%OS_VERSION%/hyperreal-better_fonts-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/decathorpe/miniaturo/repo/fedora-%OS_VERSION%/decathorpe-miniaturo-fedora-%OS_VERSION%.repo
       - vscode.repo
-  - type: rpm-ostree
     install:
-      - mozilla-fira-sans-fonts
       - papirus-icon-theme
       - papirus-icon-theme-light
       - papirus-icon-theme-dark
+      - ibm-plex-fonts-all
       - epapirus-icon-theme
+      - yaru-icon-theme
+      - yaru-sound-theme
       - telnet
       - nmap
       - netcat
@@ -23,10 +24,9 @@ modules:
       - heimdall
       - epson-inkjet-printer-escpr
       - epson-inkjet-printer-escpr2
+      - file-roller
       - fontconfig-font-replacements
       - miniaturo
-      - alsa-firmware
-      - pipewire-libs-extra
       - ffmpegthumbnailer
       - ffmpeg
       - ffmpeg-libs
@@ -52,16 +52,11 @@ modules:
       - code
       - firewalld
       - firewall-config
-      - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
-    optfix:
-      - Bitwarden
+      - gnome-tweaks
     remove:
-      - devpod
       - gnome-tour
-      - input-leap
-      - input-remapper
-      - solaar
-      - solaar-udev
+      - fdk-aac-free
+      - ffmpeg-free
       - libavcodec-free
       - libavdevice-free
       - libavfilter-free
@@ -70,11 +65,11 @@ modules:
       - libpostproc-free
       - libswresample-free
       - libswscale-free
-      - fdk-aac-free
-      - ffmpeg-free
-  
+      - firefox
+      - firefox-langpacks
+
   - type: script
     snippets:
       # Replace Fedora packages with Negativos (Mesa & HEIF)
       - echo -e "\033[90mReplacing Fedora packages with Negativos\033[0m"
-      - rpm-ostree override replace --experimental --from repo='fedora-multimedia' --remove=mesa-libglapi libheif mesa-dri-drivers mesa-filesystem mesa-libEGL mesa-libGL mesa-libgbm mesa-libxatracker mesa-va-drivers mesa-vulkan-drivers
+      - rpm-ostree override replace --experimental --from repo='fedora-multimedia' --remove=mesa-libglapi libheif libva libva-intel-media-driver mesa-dri-drivers mesa-filesystem mesa-libEGL mesa-libGL mesa-libgbm mesa-libxatracker mesa-va-drivers mesa-vulkan-drivers

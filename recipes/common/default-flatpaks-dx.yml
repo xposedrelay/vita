@@ -30,6 +30,15 @@ modules:
         - org.strawberrymusicplayer.strawberry
         - com.rtosta.zapzap
         - re.sonny.Eloquent
+        - org.gnome.Papers
+        - org.gnome.Calculator
+        - org.gnome.Loupe
+        - org.gnome.Calendar
+        - org.gnome.clocks
+        - org.gnome.SimpleScan
+        - org.gnome.Snapshot
+        - org.gnome.TextEditor
+        - org.mozilla.firefox
       remove:
         - org.gnome.Weather
         - org.gnome.Maps
