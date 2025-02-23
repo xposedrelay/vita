@@ -40,6 +40,14 @@ modules:
       - openssl
       - zstd
       - wireguard-tools
+      - virt-install
+      - libvirt-daemon-config-network
+      - libvirt-daemon-kvm
+      - qemu-kvm
+      - virt-manager
+      - virt-viewer
+      - virt-top
+      - guestfs-tools
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
