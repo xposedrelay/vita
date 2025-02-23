@@ -24,6 +24,22 @@ modules:
       - epson-inkjet-printer-escpr2
       - fontconfig-font-replacements
       - miniaturo
+      - alsa-firmware
+      - pipewire-libs-extra
+      - ffmpegthumbnailer
+      - ffmpeg
+      - ffmpeg-libs
+      - libfdk-aac
+      - heif-pixbuf-loader
+      - just
+      - fzf
+      - openrgb-udev-rules
+      - adw-gtk3-theme
+      - gnome-epub-thumbnailer
+      - gvfs-nfs
+      - openssl
+      - zstd
+      - wireguard-tools
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
@@ -33,3 +49,13 @@ modules:
       - input-remapper
       - solaar
       - solaar-udev
+      - libavcodec-free
+      - libavdevice-free
+      - libavfilter-free
+      - libavformat-free
+      - libavutil-free
+      - libpostproc-free
+      - libswresample-free
+      - libswscale-free
+      - fdk-aac-free
+      - ffmpeg-free
