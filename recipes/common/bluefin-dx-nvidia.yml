@@ -9,5 +9,6 @@ modules:
   - from-file: common/gnome-extensions.yml
   - from-file: common/gschema-overrides.yml
   - from-file: common/bling.yml
+  - from-file: common/systemd.yml
   - from-file: common/initramfs.yml
   - from-file: common/signing.yml
