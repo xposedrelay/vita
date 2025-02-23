@@ -88,6 +88,3 @@ modules:
       - echo -e "\033[90mCopying Oversteer udev rules\033[0m"
       - cp /tmp/oversteer-udev/oversteer-master/data/udev/*.rules /usr/lib/udev/rules.d/
       - rm -r /tmp/oversteer-udev/
-      # Remove avif thumbnailer, as HEIF thumbnailer already covers it (not done in Ublue)
-      - echo -e "\033[90mRemove avif thumbnailer, as HEIF thumbnailer already covers it (not done in Ublue)\033[0m"      
-      - rm /usr/share/thumbnailers/avif.thumbnailer
