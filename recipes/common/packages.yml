@@ -70,6 +70,7 @@ modules:
       - libswscale-free
       - fdk-aac-free
       - ffmpeg-free
+
   - type: script
     snippets:
       # Replace Fedora packages with Negativos (Mesa & HEIF)
