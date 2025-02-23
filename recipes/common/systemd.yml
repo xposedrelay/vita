@@ -1,0 +1,8 @@
+type: systemd
+source: local
+system:
+  enabled:
+    - dirty-centisecs.service
+    - memory-tweaks-gidro.service
+    - adbusers-append.service
+    - plugdev-append.service
