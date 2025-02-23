@@ -29,6 +29,7 @@ window-state=(980, 640, true)
 
 [org/gnome/desktop/app-folders]
 folder-children=['Games', 'GamingUtilities', 'Utilities', 'Containers', 'Wine', 'YaST', 'Pardus', 'Development', 'ee64d17e-fc25-40f4-820a-3f8ea6c52fb3', 'd0ec232b-d2a9-4e30-a889-ff79cc47dfed', '0f1d9304-421f-4c5d-a7d3-f49481993089', '2c2dfc92-7b10-4504-aa01-d87c9ee16336', '51e578b7-1bce-4ee2-a12d-6e1025ea2cff', 'Media', '93d21bf1-d963-48fd-834c-113c81ca863e', 'Creativity']
+
 [org.gnome.desktop.background]
 picture-options='zoom'
 picture-uri='file:///usr/share/backgrounds/wallpaper.jpg'
