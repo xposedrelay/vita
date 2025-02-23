@@ -5,7 +5,7 @@ Before=systemd-user-sessions.service
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/usr/bin/memory-tweaks-gidro
+ExecStart=/usr/bin/memory-tweaks
 
 [Install]
 WantedBy=multi-user.target
