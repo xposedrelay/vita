@@ -54,6 +54,9 @@ modules:
       ## Don't show link for Universal Blue documentation when invoking `ujust` (not done in Ublue)
       - echo -e "\033[90mDon't show link for Ublue docs when executing ujust (not done in Ublue)\033[0m"      
       - sed -i '/^[[:space:]]*echo "\$(Urllink/d' /usr/share/ublue-os/justfile      
+      ## Include Gidro-OS justfile
+      - echo -e "\033[90mOnly including Gidro-OS justfile\033[0m"
+      - echo "import \"/usr/share/ublue-os/just/60-custom.just\"" >> /usr/share/ublue-os/justfile
       ## Copy ujust & ugum binary
       - cp /tmp/ublue-config/config-main/build/ublue-os-just/ujust /usr/bin/ujust
       - chmod 755 /usr/bin/ujust
@@ -73,6 +76,13 @@ modules:
   # The operations below cannot be covered in rpm-ostree module, so it's used as a script
   - type: script
     snippets:
+      # Install Negativo repo
+      - echo -e "\033[90mInstalling Negativo repo\033[0m"
+      - curl -fLs --create-dirs https://negativo17.org/repos/fedora-multimedia.repo -o /etc/yum.repos.d/negativo17-fedora-multimedia.repo
+      - sed -i '0,/enabled=1/{s/enabled=1/enabled=1\npriority=90/}' /etc/yum.repos.d/negativo17-fedora-multimedia.repo
+      # Replace Fedora packages with Negativos (Mesa & HEIF)
+      - echo -e "\033[90mReplacing Fedora packages with Negativos\033[0m"
+      - rpm-ostree override replace --experimental --from repo='fedora-multimedia' --remove=mesa-libglapi libheif libva libva-intel-media-driver mesa-dri-drivers mesa-filesystem mesa-libEGL mesa-libGL mesa-libgbm mesa-libxatracker mesa-va-drivers mesa-vulkan-drivers
       # Remove chsh
       - echo -e "\033[90mRemoving chsh\033[0m"
       - rm /usr/bin/chsh
@@ -85,3 +95,31 @@ modules:
       - echo -e "\033[90mCopying Oversteer udev rules\033[0m"
       - cp /tmp/oversteer-udev/oversteer-master/data/udev/*.rules /usr/lib/udev/rules.d/
       - rm -r /tmp/oversteer-udev/
+      # Remove avif thumbnailer, as HEIF thumbnailer already covers it (not done in Ublue)
+      - echo -e "\033[90mRemove avif thumbnailer, as HEIF thumbnailer already covers it (not done in Ublue)\033[0m"      
+      - rm /usr/share/thumbnailers/avif.thumbnailer
+      
+  - type: rpm-ostree
+    remove:
+      - fdk-aac-free
+      - ffmpeg-free
+      - libavcodec-free
+      - libavdevice-free
+      - libavfilter-free
+      - libavformat-free
+      - libavutil-free
+      - libpostproc-free
+      - libswresample-free
+      - libswscale-free
+
+    install:
+      # Audio stuff
+      - alsa-firmware
+      - pipewire-libs-extra
+      # Thumbnailing
+      - ffmpegthumbnailer
+      - ffmpeg
+      - ffmpeg-libs
+      # Codecs
+      - libfdk-aac
+      - heif-pixbuf-loader
