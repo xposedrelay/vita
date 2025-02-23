@@ -5,6 +5,7 @@ modules:
       - https://negativo17.org/repos/fedora-multimedia.repo
       - https://copr.fedorainfracloud.org/coprs/hyperreal/better_fonts/repo/fedora-%OS_VERSION%/hyperreal-better_fonts-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/decathorpe/miniaturo/repo/fedora-%OS_VERSION%/decathorpe-miniaturo-fedora-%OS_VERSION%.repo
+      - vscode.repo
   - type: rpm-ostree
     install:
       - mozilla-fira-sans-fonts
@@ -48,6 +49,8 @@ modules:
       - virt-viewer
       - virt-top
       - guestfs-tools
+      - firewalld
+      - firewall-config
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
