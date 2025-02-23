@@ -1,0 +1,5 @@
+type: kargs
+source: local
+kargs:
+  # Enable full kernel preemption
+  - preempt=full
