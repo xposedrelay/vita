@@ -1,0 +1,11 @@
+[Unit]
+Description=Dynamic memory tweaks for Gidro-OS
+Before=systemd-user-sessions.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/memory-tweaks-gidro
+
+[Install]
+WantedBy=multi-user.target
