@@ -7,4 +7,4 @@ modules:
       - "1414" # Unblank lock screen
       - "3396" # Color Picker
       - "6433" # App menu is back
-      - "517" # Caffeine
+      - "307" # Dash to dock
