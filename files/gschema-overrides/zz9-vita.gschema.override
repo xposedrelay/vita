@@ -1,0 +1,223 @@
+[ca/desrt/dconf-editor]
+saved-pathbar-path='/'
+saved-view='/'
+show-warning=false
+window-height=500
+window-is-maximized=false
+window-width=540
+
+[org/gnome/Ptyxis]
+default-profile-uuid='2fe7d446df07b0be5f1a261a6793e246'
+interface-style='system'
+profile-uuids=['2fe7d446df07b0be5f1a261a6793e246']
+window-size=(uint32 120, uint32 26)
+
+[org/gnome/Ptyxis/Profiles/2fe7d446df07b0be5f1a261a6793e246]
+palette='gnome'
+
+[org/gnome/control-center]
+last-panel='wifi'
+window-state=(980, 640, true)
+
+[org/gnome/desktop/app-folders]
+folder-children=['aee7fa01-8440-4f18-8d7d-6528c57d83c0', 'd5effde2-cde1-4f8b-aa35-9c15dd69f06f', '11ec53a2-a52b-4795-9ae1-cf64e97f91ac', '1be27433-bb64-4efc-a8be-0f6b60cf3268', 'af8a9d59-0a5e-469c-813c-5accd73cc31d', '284e024d-7b28-44c0-b40b-f7ba1032250f']
+
+[org/gnome/desktop/app-folders/folders/11ec53a2-a52b-4795-9ae1-cf64e97f91ac]
+apps=['org.gnome.Settings.desktop', 'org.gnome.tweaks.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'org.gnome.DiskUtility.desktop', 'io.missioncenter.MissionCenter.desktop', 'com.github.tchx84.Flatseal.desktop', 'ca.desrt.dconf-editor.desktop', 'firewall-config.desktop', 'virt-manager.desktop', 'htop.desktop']
+name='Sistema'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/1be27433-bb64-4efc-a8be-0f6b60cf3268]
+apps=['org.videolan.VLC.desktop', 'org.pulseaudio.pavucontrol.desktop', 'com.obsproject.Studio.desktop']
+name='Sonido y vídeo'
+
+[org/gnome/desktop/app-folders/folders/284e024d-7b28-44c0-b40b-f7ba1032250f]
+apps=['balena-etcher.desktop', 'org.raspberrypi.rpi-imager.desktop', 'io.dbeaver.DBeaverCommunity.desktop', 'com.usebruno.Bruno.desktop', 'code.desktop']
+name='Herramientas'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/aee7fa01-8440-4f18-8d7d-6528c57d83c0]
+apps=['org.libreoffice.LibreOffice.writer.desktop', 'org.libreoffice.LibreOffice.impress.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.libreoffice.LibreOffice.draw.desktop', 'org.libreoffice.LibreOffice.math.desktop', 'org.libreoffice.LibreOffice.base.desktop', 'org.libreoffice.LibreOffice.desktop']
+name='Ofimática'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/af8a9d59-0a5e-469c-813c-5accd73cc31d]
+apps=['org.remmina.Remmina.desktop', 'com.anydesk.Anydesk.desktop', 'com.rustdesk.RustDesk.desktop', 'remote-viewer.desktop']
+name='Acceso Remoto'
+translate=false
+
+[org/gnome/desktop/app-folders/folders/d5effde2-cde1-4f8b-aa35-9c15dd69f06f]
+apps=['org.gnome.clocks.desktop', 'org.gnome.SimpleScan.desktop', 'org.gnome.Papers.desktop', 'org.gnome.Calendar.desktop', 'org.gnome.Calculator.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.Snapshot.desktop', 'yelp.desktop']
+name='Accesorios'
+translate=false
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/wallpaper.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/wallpaper.jpg'
+primary-color='#092844'
+secondary-color='#1F1E2D'
+
+[org/gnome/desktop/datetime]
+automatic-timezone=true
+
+[org/gnome/desktop/input-sources]
+current=uint32 0
+sources=[('xkb', 'latam')]
+
+[org/gnome/desktop/interface]
+accent-color='red'
+clock-format='12h'
+clock-show-weekday=true
+color-scheme='prefer-light'
+cursor-theme='Yaru'
+document-font-name='IBM Plex Sans 12'
+font-hinting='none'
+font-name='IBM Plex Sans 12'
+gtk-theme='adw-gtk3'
+icon-theme='Papirus'
+monospace-font-name='JetBrainsMono Nerd Font 12'
+show-battery-percentage=true
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-ptyxis', 'balena-etcher']
+
+[org/gnome/desktop/notifications/application/balena-etcher]
+application-id='balena-etcher.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-ptyxis]
+application-id='org.gnome.Ptyxis.desktop'
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+recent-files-max-age=1
+remember-recent-files=false
+report-technical-problems=false
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/wallpaper.jpg'
+primary-color='#092844'
+secondary-color='#1F1E2D'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Settings.desktop', 'org.gnome.Contacts.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 0
+
+[org/gnome/desktop/sound]
+theme-name='Yaru'
+
+[org/gnome/desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
+num-workspaces=1
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/login-screen]
+enable-fingerprint-authentication=true
+enable-smartcard-authentication=false
+
+[org/gnome/mutter]
+center-new-windows=true
+dynamic-workspaces=false
+workspaces-only-on-primary=false
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
+maximized=true
+
+[org/gnome/portal/filechooser/org.gnome.tweaks]
+last-folder-path='/usr/share/backgrounds'
+
+[org/gnome/settings-daemon/plugins/power]
+idle-dim=true
+power-saver-profile-on-low-battery=true
+sleep-inactive-ac-type='nothing'
+
+[org/gnome/shell]
+app-picker-layout=[{'d5effde2-cde1-4f8b-aa35-9c15dd69f06f': <{'position': <0>}>, 'af8a9d59-0a5e-469c-813c-5accd73cc31d': <{'position': <1>}>, '284e024d-7b28-44c0-b40b-f7ba1032250f': <{'position': <2>}>, 'aee7fa01-8440-4f18-8d7d-6528c57d83c0': <{'position': <3>}>, '11ec53a2-a52b-4795-9ae1-cf64e97f91ac': <{'position': <4>}>, '1be27433-bb64-4efc-a8be-0f6b60cf3268': <{'position': <5>}>, 'org.gnome.Software.desktop': <{'position': <6>}>, 'org.gnome.TextEditor.desktop': <{'position': <7>}>}]
+disabled-extensions=['background-logo@fedorahosted.org', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['appmenu-is-back@fthx', 'appindicatorsupport@rgcjonas.gmail.com', 'clipboard-indicator@tudmotu.com', 'color-picker@tuberry', 'unblank@sun.wxg@gmail.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Ptyxis.desktop', 'org.mozilla.firefox.desktop', 'com.brave.Browser.desktop', 'org.gnome.TextEditor.desktop']
+last-selected-power-profile='performance'
+welcome-dialog-last-shown-version='47.0'
+
+[org/gnome/shell/extensions/unblank]
+power=false
+time=0
+
+[org/gnome/software]
+check-timestamp=int64 1737745172
+first-run=false
+
+[org/gnome/system/location]
+enabled=true
+
+[org/gnome/tweaks]
+show-extensions-notice=false
+
+[org/gtk/gtk4/settings/file-chooser]
+show-hidden=true
+sort-directories-first=true
+
+[org/gtk/settings/file-chooser]
+clock-format='24h'
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=192
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(0, 35)
+window-size=(1310, 686)
+
+[org/virt-manager/virt-manager]
+manager-window-height=550
+manager-window-width=550
+
+[org/virt-manager/virt-manager/connections]
+autoconnect=['qemu:///system']
+uris=['qemu:///system']
+
+[org/virt-manager/virt-manager/vmlist-fields]
+disk-usage=true
+network-traffic=true
+
+[org.gnome.login-screen]
+logo='/usr/share/pixmaps/gdm-watermark.png'
+
+[org/gnome/shell/extensions/dash-to-dock]
+autohide=true
+autohide-in-fullscreen=false
+click-action='minimize'
+dash-max-icon-size='48'
+dock-fixed=false
+scroll-action='do-nothing'
+show-apps-at-top=false
+show-dock-urgent-notify=false
+show-mounts=false
+intellihide=false
+show-trash=false
+
+[org.gnome.software]
+allow-updates=true
+download-updates=false
+download-updates-notify=false
+packaging-format-preference=['flatpak:flathub-user', 'flatpak:flathub-system']
