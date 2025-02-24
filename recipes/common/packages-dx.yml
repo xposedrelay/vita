@@ -52,6 +52,7 @@ modules:
       - gnome-tweaks
       - fish
       - fastfetch
+      - android-tools
     remove:
       - gnome-tour
       - firefox
