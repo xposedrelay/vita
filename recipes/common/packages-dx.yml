@@ -29,7 +29,6 @@ modules:
       - file-roller
       - fontconfig-font-replacements
       - miniaturo
-      - just
       - fzf
       - openrgb-udev-rules
       - adw-gtk3-theme
