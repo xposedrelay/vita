@@ -51,7 +51,6 @@ modules:
       - firewall-config
       - gnome-tweaks
       - fish
-      - fastfetch
       - android-tools
       - distrobox
     remove:
