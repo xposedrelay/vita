@@ -53,7 +53,9 @@ modules:
       - fish
       - fastfetch
       - android-tools
+      - distrobox
     remove:
       - gnome-tour
       - firefox
       - firefox-langpacks
+      - gnome-system-monitor
