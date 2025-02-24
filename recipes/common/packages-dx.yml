@@ -53,6 +53,7 @@ modules:
       - fish
       - android-tools
       - distrobox
+      - power-profiles-daemon
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - bitwarden
@@ -61,3 +62,5 @@ modules:
       - firefox
       - firefox-langpacks
       - gnome-system-monitor
+      - tuned
+      - tuned-ppd
