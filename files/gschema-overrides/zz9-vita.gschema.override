@@ -221,3 +221,7 @@ allow-updates=true
 download-updates=false
 download-updates-notify=false
 packaging-format-preference=['flatpak:flathub-user', 'flatpak:flathub-system']
+
+[org.gnome.mutter]
+check-alive-timeout=uint32 20000
+experimental-features=['variable-refresh-rate']
