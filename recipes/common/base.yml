@@ -43,31 +43,7 @@ modules:
       - cp /tmp/ublue-config/config-main/files/usr/lib/systemd/user/flatpak-user-update.service /usr/lib/systemd/user/flatpak-user-update.service
       - echo -e "\033[90mEnabling systemd timers for flatpak updaters\033[0m"
       - systemctl --system enable flatpak-system-update.timer
-      - systemctl --global enable flatpak-user-update.timer
-      # Add just config from Universal Blue
-      - echo -e "\033[90mAdding just config from Universal Blue\033[0m"
-      - echo -e "\033[90mExcluding motd tips, Ublue justfiles, distrobox+podman manifest files & brew profile.d script (not needed)\033[0m"
-      ## Add function to invoke ujust when typing just (not done in Ublue)
-      - echo -e "\033[90mAdd function to execute ujust when typing just (not done in Ublue)\033[0m"      
-      - echo -e "\n# Alias ujust to just, so using \`just\` command works\njust() {\n  if [ \${#} -eq 0 ]; then\n    /usr/bin/ujust\n  elif [ -n \"\${1}\" ]; then\n    ujust_commands=\$(/usr/bin/just --justfile /usr/share/ublue-os/justfile --list --alias-style separate | awk 'NR>1 {printf \"%s \", \$1} END {print \"\"}')\n    if echo \" \${ujust_commands} \" | grep -q \" \${1} \" || [[ \"\${1}\" == \"--choose\" ]]; then\n      /usr/bin/ujust \"\${@}\"\n    else\n      /usr/bin/just \"\${@}\"\n    fi\n  else\n    /usr/bin/just \"\${@}\"\n  fi\n}\nexport -f just" >> /etc/profile.d/ublue-os-just.sh
-      ## Copy 60-custom.just template & ublue-os justfile template
-      - mkdir -p /usr/share/ublue-os/just/
-      - cp /tmp/ublue-config/config-main/build/ublue-os-just/60-custom.just /usr/share/ublue-os/just/
-      - cp /tmp/ublue-config/config-main/build/ublue-os-just/header.just /usr/share/ublue-os/justfile
-      ## Don't show link for Universal Blue documentation when invoking `ujust` (not done in Ublue)
-      - echo -e "\033[90mDon't show link for Ublue docs when executing ujust (not done in Ublue)\033[0m"      
-      - sed -i '/^[[:space:]]*echo "\$(Urllink/d' /usr/share/ublue-os/justfile      
-      ## Include Gidro-OS justfile
-      - echo -e "\033[90mOnly including Gidro-OS justfile\033[0m"
-      - echo "import \"/usr/share/ublue-os/just/60-custom.just\"" >> /usr/share/ublue-os/justfile
-      ## Copy ujust & ugum binary
-      - cp /tmp/ublue-config/config-main/build/ublue-os-just/ujust /usr/bin/ujust
-      - chmod 755 /usr/bin/ujust
-      - cp /tmp/ublue-config/config-main/build/ublue-os-just/ugum /usr/bin/ugum
-      - chmod 755 /usr/bin/ugum
-      ## Copy ujust libraries
-      - mkdir -p /usr/lib/ujust/
-      - cp /tmp/ublue-config/config-main/build/ublue-os-just/lib-ujust/* /usr/lib/ujust/
+      - systemctl --global enable flatpak-user-update.timer  
       # Use ZSTD compression for initramfs
       - echo "compress=\"zstd\"" > /usr/lib/dracut/dracut.conf.d/10-compression.conf
       # Remove temporary directory
