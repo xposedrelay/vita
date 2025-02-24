@@ -50,6 +50,8 @@ modules:
       - firewalld
       - firewall-config
       - gnome-tweaks
+      - fish
+      - fastfetch
     remove:
       - gnome-tour
       - firefox
