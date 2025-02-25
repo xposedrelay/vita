@@ -62,22 +62,30 @@ picture-uri-dark='file:///usr/share/backgrounds/wallpaper.jpg'
 primary-color='#092844'
 secondary-color='#1F1E2D'
 
+[org.gnome.desktop.background]
+picture-options='zoom'
+picture-uri='file:///usr/share/backgrounds/wallpaper.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/wallpaper.jpg'
+primary-color='092844'
+secondary-color='1F1E2D'
+
 [org/gnome/desktop/datetime]
 automatic-timezone=true
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
-sources=[('xkb', 'latam')]
+sources=[('xkb', 'us+intl')]
 
 [org/gnome/desktop/interface]
 accent-color='green'
 clock-format='24h'
 clock-show-weekday=true
-color-scheme='prefer-light'
+color-scheme='prefer-dark'
 cursor-theme='Yaru'
-document-font-name='IBM Plex Sans 12'
+document-font-name='Cantarell 11'
 font-hinting='slight'
-font-name='IBM Plex Sans 12'
+font-antialiasing='rgba'
+font-name='Cantarell 11'
 gtk-theme='adw-gtk3'
 icon-theme='Papirus-Dark'
 monospace-font-name='JetBrainsMono Nerd Font 12'
@@ -99,6 +107,7 @@ two-finger-scrolling-enabled=true
 recent-files-max-age=1
 remember-recent-files=false
 report-technical-problems=false
+remove-old-temp-files=true
 
 [org/gnome/desktop/screensaver]
 color-shading-type='solid'
