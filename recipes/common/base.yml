@@ -77,6 +77,8 @@ modules:
       # Remove avif thumbnailer, as HEIF thumbnailer already covers it (not done in Ublue)
       - echo -e "\033[90mRemove avif thumbnailer, as HEIF thumbnailer already covers it (not done in Ublue)\033[0m"      
       - rm /usr/share/thumbnailers/avif.thumbnailer
+      # Homebrew
+      - touch /.dockerenv
       
   - type: rpm-ostree
     remove:
