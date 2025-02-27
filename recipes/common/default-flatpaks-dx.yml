@@ -18,7 +18,7 @@ modules:
         - com.obsproject.Studio
         - org.signal.Signal
         - com.valvesoftware.Steam
-        - com.github.unrud.VideoDownloader
+        - org.nickvision.tubeconverter
         - org.videolan.VLC
         - dev.vencord.Vesktop
         - org.jdownloader.JDownloader
