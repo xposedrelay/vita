@@ -9,13 +9,13 @@ modules:
     snippets:
       # Download Universal Blue config zip
       - echo -e "\033[90mDownloading Universal Blue config zip file\033[0m"
-      - curl -fLs --create-dirs https://github.com/ublue-os/config/archive/refs/heads/main.zip -o /tmp/ublue-config/main.zip
+      - curl -fLs --create-dirs https://github.com/ublue-os/packages/archive/refs/heads/main.zip -o /tmp/ublue-config/packages.zip
       - echo -e "\033[90mUnzipping the file\033[0m"
-      - unzip -q /tmp/ublue-config/main.zip -d /tmp/ublue-config/
-      - rm /tmp/ublue-config/main.zip
+      - unzip -q /tmp/ublue-config/packages.zip -d /tmp/ublue-config/
+      - rm /tmp/ublue-config/packages.zip
       # Universal Blue udev rules    
       - echo -e "\033[90mCopying udev rules from Universal Blue\033[0m"
-      - cp /tmp/ublue-config/config-main/files/etc/udev/rules.d/*.rules /usr/lib/udev/rules.d/
+      - cp /tmp/ublue-config/packages-main/packages/ublue-os-udev-rules/src/udev-rules.d/*.rules /usr/lib/udev/rules.d/
       ## Add plugdev group to sysusers.d (needed for Yubikey udev rules) (not done in Ublue)
       - echo -e "\033[90mAdd plugdev group to sysusers.d (not done in Ublue)\033[0m"      
       - echo "g plugdev -" > /usr/lib/sysusers.d/30-append-plugdev-group.conf
@@ -37,10 +37,10 @@ modules:
       # flatpak updaters (rpm-ostree updater ommited because bootc update is used instead)
       ## flatpak updater
       - echo -e "\033[90mCopying flatpak updater\033[0m"
-      - cp /tmp/ublue-config/config-main/files/usr/lib/systemd/system/flatpak-system-update.timer /usr/lib/systemd/system/flatpak-system-update.timer
-      - cp /tmp/ublue-config/config-main/files/usr/lib/systemd/system/flatpak-system-update.service /usr/lib/systemd/system/flatpak-system-update.service
-      - cp /tmp/ublue-config/config-main/files/usr/lib/systemd/user/flatpak-user-update.timer /usr/lib/systemd/user/flatpak-user-update.timer
-      - cp /tmp/ublue-config/config-main/files/usr/lib/systemd/user/flatpak-user-update.service /usr/lib/systemd/user/flatpak-user-update.service
+      - cp /tmp/ublue-config/packages-main/packages/ublue-os-update-services/src/usr/lib/systemd/system/flatpak-system-update.timer /usr/lib/systemd/system/flatpak-system-update.timer
+      - cp /tmp/ublue-config/packages-main/packages/ublue-os-update-services/src/usr/lib/systemd/system/flatpak-system-update.service /usr/lib/systemd/system/flatpak-system-update.service
+      - cp /tmp/ublue-config/packages-main/packages/ublue-os-update-services/src/usr/lib/systemd/user/flatpak-user-update.timer /usr/lib/systemd/user/flatpak-user-update.timer
+      - cp /tmp/ublue-config/packages-main/packages/ublue-os-update-services/src/usr/lib/systemd/user/flatpak-user-update.service /usr/lib/systemd/user/flatpak-user-update.service
       - echo -e "\033[90mEnabling systemd timers for flatpak updaters\033[0m"
       - systemctl --system enable flatpak-system-update.timer
       - systemctl --global enable flatpak-user-update.timer  
