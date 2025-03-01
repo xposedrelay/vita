@@ -5,7 +5,3 @@ system:
     - centisecs.service
     - memory-tweaks.service
     - adbusers-append.service
-user:
-  enabled:
-    - flatpak@discord.service
-    - flatpak@steam.service
