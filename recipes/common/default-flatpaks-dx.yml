@@ -43,3 +43,4 @@ modules:
         - io.missioncenter.MissionCenter
         - com.mattjakeman.ExtensionManager
         - org.gnome.Weather
+        - com.calibre_ebook.calibre
