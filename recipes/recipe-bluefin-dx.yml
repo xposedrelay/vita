@@ -1,7 +1,7 @@
 
 name: vita-dx
 description: Custom Atomic image inspired by @xposedrelay
-base-image: quay.io/fedora-ostree-desktops/silverblue
-image-version: 41
+base-image: quay.io/fedora/fedora-silverblue
+image-version: latest
 modules:
   - from-file: common/bluefin-dx.yml
