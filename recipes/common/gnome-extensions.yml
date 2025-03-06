@@ -9,3 +9,4 @@ modules:
       - "6433" # App menu is back
       - "307" # Dash to dock
       - "517" # Caffeine
+      - "1319" # GSconnect
