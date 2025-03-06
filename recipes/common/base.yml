@@ -92,6 +92,7 @@ modules:
       - libpostproc-free
       - libswresample-free
       - libswscale-free
+      - gnome-software-rpm-ostree
 
     install:
       # Audio stuff
