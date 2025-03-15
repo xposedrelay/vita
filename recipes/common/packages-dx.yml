@@ -53,9 +53,6 @@ modules:
       - android-tools
       - distrobox
       - power-profiles-daemon
-      - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
-    optfix:
-      - bitwarden
     remove:
       - gnome-tour
       - firefox
