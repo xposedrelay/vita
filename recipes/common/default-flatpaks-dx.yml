@@ -44,3 +44,4 @@ modules:
         - com.mattjakeman.ExtensionManager
         - org.gnome.Weather
         - com.calibre_ebook.calibre
+        - com.protonvpn.www
