@@ -61,6 +61,7 @@ modules:
       - docker-buildx-plugin
       - docker-compose-plugin
       - cockpit
+      - docker-desktop
     remove:
       - gnome-tour
       - firefox
