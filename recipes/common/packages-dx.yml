@@ -59,6 +59,9 @@ modules:
       - docker-compose-plugin
       - cockpit
       - docker-desktop
+      - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
+    optfix:
+      - Bitwarden
     remove:
       - gnome-tour
       - firefox
