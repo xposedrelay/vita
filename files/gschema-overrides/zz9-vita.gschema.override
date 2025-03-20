@@ -154,10 +154,11 @@ maximized=true
 [org/gnome/portal/filechooser/org.gnome.tweaks]
 last-folder-path='/usr/share/backgrounds'
 
-[org/gnome/settings-daemon/plugins/power]
+[org.gnome.settings-daemon.plugins.power]
 idle-dim=true
 power-saver-profile-on-low-battery=true
 sleep-inactive-ac-type='nothing'
+sleep-inactive-battery-type='nothing'
 
 [org/gnome/shell]
 app-picker-layout=[{'d5effde2-cde1-4f8b-aa35-9c15dd69f06f': <{'position': <0>}>, 'af8a9d59-0a5e-469c-813c-5accd73cc31d': <{'position': <1>}>, '284e024d-7b28-44c0-b40b-f7ba1032250f': <{'position': <2>}>, 'aee7fa01-8440-4f18-8d7d-6528c57d83c0': <{'position': <3>}>, '11ec53a2-a52b-4795-9ae1-cf64e97f91ac': <{'position': <4>}>, '1be27433-bb64-4efc-a8be-0f6b60cf3268': <{'position': <5>}>, 'org.gnome.Software.desktop': <{'position': <6>}>, 'org.gnome.TextEditor.desktop': <{'position': <7>}>}]
