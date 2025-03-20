@@ -34,16 +34,6 @@ modules:
       - curl -fLs --create-dirs https://raw.githubusercontent.com/M0Rf30/android-udev-rules/refs/heads/main/51-android.rules -o /usr/lib/udev/rules.d/51-android.rules
       - echo -e "\033[90mAdding adbusers group to sysusers.d\033[0m"
       - echo "g adbusers - -" > /usr/lib/sysusers.d/android-udev.conf
-      # flatpak updaters (rpm-ostree updater ommited because bootc update is used instead)
-      ## flatpak updater
-      - echo -e "\033[90mCopying flatpak updater\033[0m"
-      - cp /tmp/ublue-config/packages-main/packages/ublue-os-update-services/src/usr/lib/systemd/system/flatpak-system-update.timer /usr/lib/systemd/system/flatpak-system-update.timer
-      - cp /tmp/ublue-config/packages-main/packages/ublue-os-update-services/src/usr/lib/systemd/system/flatpak-system-update.service /usr/lib/systemd/system/flatpak-system-update.service
-      - cp /tmp/ublue-config/packages-main/packages/ublue-os-update-services/src/usr/lib/systemd/user/flatpak-user-update.timer /usr/lib/systemd/user/flatpak-user-update.timer
-      - cp /tmp/ublue-config/packages-main/packages/ublue-os-update-services/src/usr/lib/systemd/user/flatpak-user-update.service /usr/lib/systemd/user/flatpak-user-update.service
-      - echo -e "\033[90mEnabling systemd timers for flatpak updaters\033[0m"
-      - systemctl --system enable flatpak-system-update.timer
-      - systemctl --global enable flatpak-user-update.timer  
       # Use ZSTD compression for initramfs
       - echo "compress=\"zstd\"" > /usr/lib/dracut/dracut.conf.d/10-compression.conf
       # Remove temporary directory
