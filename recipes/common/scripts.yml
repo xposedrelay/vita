@@ -3,3 +3,7 @@ modules:
   - type: script
     scripts:
       - papirus-folders.sh
+    snippets:
+      - systemctl enable cockpit.socket
+      - firewall-cmd --add-service=cockpit
+      - firewall-cmd --add-service=cockpit --permanent
