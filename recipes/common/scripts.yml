@@ -4,5 +4,3 @@ modules:
     scripts:
       - papirus-folders.sh
       - systemctl enable cockpit.socket
-      - firewall-cmd --add-service=cockpit
-      - firewall-cmd --add-service=cockpit --permanent
