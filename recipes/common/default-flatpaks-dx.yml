@@ -45,3 +45,4 @@ modules:
         - org.gnome.Weather
         - com.calibre_ebook.calibre
         - com.protonvpn.www
+        - com.axosoft.GitKraken
