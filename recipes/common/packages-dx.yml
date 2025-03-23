@@ -5,6 +5,7 @@ modules:
       - https://negativo17.org/repos/fedora-multimedia.repo
       - https://copr.fedorainfracloud.org/coprs/hyperreal/better_fonts/repo/fedora-%OS_VERSION%/hyperreal-better_fonts-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/decathorpe/miniaturo/repo/fedora-%OS_VERSION%/decathorpe-miniaturo-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/lizardbyte/stable/repo/fedora-%OS_VERSION%/lizardbyte-stable-fedora-%OS_VERSION%.repo
       - vscode.repo
       - https://download.docker.com/linux/fedora/docker-ce.repo
     keys:
@@ -58,6 +59,7 @@ modules:
       - docker-buildx-plugin
       - docker-compose-plugin
       - cockpit
+      - Sunshine
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
       - https://desktop.docker.com/linux/main/amd64/docker-desktop-x86_64.rpm
     optfix:
