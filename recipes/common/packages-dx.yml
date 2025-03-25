@@ -62,11 +62,11 @@ modules:
       - docker-compose-plugin
       - cockpit
       - Sunshine
+      - trivalent
+      - trivalent-subresource-filter
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
-      - trivalent
-      - trivalent-subresource-filter
     remove:
       - gnome-tour
       - firefox
