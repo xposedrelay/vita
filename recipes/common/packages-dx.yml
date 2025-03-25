@@ -66,6 +66,7 @@ modules:
     optfix:
       - Bitwarden
       - trivalent
+      - trivalent-subresource-filter
     remove:
       - gnome-tour
       - firefox
