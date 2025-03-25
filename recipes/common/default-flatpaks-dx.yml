@@ -5,7 +5,6 @@ modules:
     system:
       install:
         - org.audacityteam.Audacity
-        - com.brave.Browser
         - com.usebruno.Bruno
         - io.dbeaver.DBeaverCommunity
         - ca.desrt.dconf-editor
