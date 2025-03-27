@@ -45,3 +45,4 @@ modules:
         - com.calibre_ebook.calibre
         - com.protonvpn.www
         - com.axosoft.GitKraken
+        - com.brave.Browser
