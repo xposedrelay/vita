@@ -4,7 +4,6 @@ modules:
 # - ublue-os-udev-rules
 # - android-udev-rules
 # - ublue-os-update-services
-# - ublue-os-just (stripped version: without motd tips, Ublue justfiles, non-needed brew profile.d script & Ublue distrobox+podman manifest files)
   - type: script
     snippets:
       # Download Universal Blue config zip
@@ -45,30 +44,32 @@ modules:
   # The operations below cannot be covered in rpm-ostree module, so it's used as a script
   - type: script
     snippets:
-      # Install Negativo repo
-      - echo -e "\033[90mInstalling Negativo repo\033[0m"
-      - curl -fLs --create-dirs https://negativo17.org/repos/fedora-multimedia.repo -o /etc/yum.repos.d/negativo17-fedora-multimedia.repo
-      - sed -i '0,/enabled=1/{s/enabled=1/enabled=1\npriority=90/}' /etc/yum.repos.d/negativo17-fedora-multimedia.repo
-      # Replace Fedora packages with Negativos (Mesa & HEIF)
-      - echo -e "\033[90mReplacing Fedora packages with Negativos\033[0m"
-      - rpm-ostree override replace --experimental --from repo='fedora-multimedia' libheif libva libva-intel-media-driver mesa-dri-drivers mesa-filesystem mesa-libEGL mesa-libGL mesa-libgbm mesa-va-drivers mesa-vulkan-drivers
       # Remove chsh
       - echo -e "\033[90mRemoving chsh\033[0m"
       - rm /usr/bin/chsh
-      # Install oversteer udev rules
-      - echo -e "\033[90mDownloading Oversteer udev zip file\033[0m"
-      - curl -fLs --create-dirs  https://github.com/berarma/oversteer/archive/refs/heads/master.zip -o /tmp/oversteer-udev/master.zip
-      - echo -e "\033[90mUnzipping Oversteer udev zip file\033[0m"
-      - unzip -q /tmp/oversteer-udev/master.zip -d /tmp/oversteer-udev/
-      - rm /tmp/oversteer-udev/master.zip
-      - echo -e "\033[90mCopying Oversteer udev rules\033[0m"
-      - cp /tmp/oversteer-udev/oversteer-master/data/udev/*.rules /usr/lib/udev/rules.d/
-      - rm -r /tmp/oversteer-udev/
       # Remove avif thumbnailer, as HEIF thumbnailer already covers it (not done in Ublue)
       - echo -e "\033[90mRemove avif thumbnailer, as HEIF thumbnailer already covers it (not done in Ublue)\033[0m"      
       - rm /usr/share/thumbnailers/avif.thumbnailer
       
   - type: rpm-ostree
+    repos:
+      - https://negativo17.org/repos/fedora-multimedia.repo
+    replace:
+    - from-repo: https://negativo17.org/repos/fedora-multimedia.repo
+      packages:
+        - libheif
+        - libva
+        - libva-intel-media-driver
+        - mesa-dri-drivers
+        - mesa-filesystem
+        - mesa-libEGL
+        - mesa-libGL
+        - mesa-libgbm
+        - mesa-va-drivers
+        - mesa-vulkan-drivers
+        - intel-gmmlib
+        - intel-vpl-gpu-rt
+        - intel-mediasdk
     remove:
       - fdk-aac-free
       - ffmpeg-free
@@ -81,7 +82,6 @@ modules:
       - libswresample-free
       - libswscale-free
       - gnome-software-rpm-ostree
-
     install:
       # Audio stuff
       - alsa-firmware
