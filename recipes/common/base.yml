@@ -57,7 +57,6 @@ modules:
     replace:
     - from-repo: https://negativo17.org/repos/fedora-multimedia.repo
       packages:
-        - libheif
         - libva
         - libva-intel-media-driver
         - mesa-dri-drivers

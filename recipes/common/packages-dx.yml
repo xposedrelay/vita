@@ -6,6 +6,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/lizardbyte/stable/repo/fedora-%OS_VERSION%/lizardbyte-stable-fedora-%OS_VERSION%.repo
       - https://packages.microsoft.com/yumrepos/vscode
       - https://download.docker.com/linux/fedora/docker-ce.repo
+      - https://negativo17.org/repos/fedora-multimedia.repo
     keys:
       - https://packages.microsoft.com/keys/microsoft.asc
       - https://download.docker.com/linux/fedora/gpg
@@ -57,6 +58,7 @@ modules:
       - docker-compose-plugin
       - cockpit
       - Sunshine
+      - libheif
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
