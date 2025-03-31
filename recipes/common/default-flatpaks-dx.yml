@@ -37,7 +37,6 @@ modules:
         - org.gnome.SimpleScan
         - org.gnome.Snapshot
         - org.gnome.TextEditor
-        - app.zen_browser.zen
         - com.github.tchx84.Flatseal
         - io.missioncenter.MissionCenter
         - com.mattjakeman.ExtensionManager
