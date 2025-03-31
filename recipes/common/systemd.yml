@@ -5,3 +5,7 @@ system:
     - centisecs.service
     - memory-tweaks.service
     - adbusers-append.service
+    - adw-gtk3-installer-privileged.service
+user:
+  enabled:
+    - adw-gtk3-installer.service
