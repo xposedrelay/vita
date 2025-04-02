@@ -1,0 +1,112 @@
+title: Welcome to Vita
+properties:
+  mode: "run-once"
+screens:
+  first-screen:
+    source: yafti.screen.title
+    values:
+      title: "Welcome to Vita"
+      icon: "/usr/share/pixmaps/gdm-watermark.png"
+      description: |
+        ATTENTION!
+        Please wait for notification that all flatpaks are installed before proceeding!
+
+        Explore useful apps and options!
+  applications:
+    source: yafti.screen.package
+    values:
+      title: Application Installer
+      show_terminal: true
+      package_manager: yafti.plugin.flatpak
+      package_manager_defaults:
+        user: true
+        system: false
+      groups:
+        User Apps:
+          description: User applications for general usage.
+          default: false
+          packages:
+             - Thunderbird (Email): org.mozilla.Thunderbird
+             - Discord: dev.vencord.Vesktop
+             - Telegram: org.telegram.desktop
+             - Signal: org.signal.Signal
+             - Element: im.riot.Riot
+             - Zapzap (Whatsapp client): com.rtosta.zapzap
+             - Eloquent (Corrector): re.sonny.Eloquent
+             - LibreOffice: org.libreoffice.LibreOffice
+             - Zen Browser (Firefox fork): app.zen_browser.zen
+             - Brave Browser (Chromium based): com.brave.Browser
+             - Proton VPN: com.protonvpn.www
+             - Piper (Logitech client): org.freedesktop.Piper
+        Gaming Apps:
+          description: User applications for gaming usage.
+          default: false
+          packages:
+            - Steam: com.valvesoftware.Steam
+            - ProtonPlus (Steam Proton Manager): com.vysp3r.ProtonPlus
+            - Sober (Roblox): org.vinegarhq.Sober            
+            - Cartridges (Universal Game Launcher): hu.kramo.Cartridges            
+            - DuckStation (PS1 Emulator): org.duckstation.DuckStation
+            - PCSX2 (PS2 Emulator): net.pcsx2.PCSX2
+            - RPCS3 (PS3 Emulator): net.rpcs3.RPCS3
+            - PPSSPP (PSP Emulator): org.ppsspp.PPSSPP
+            - simple64 (N64 Emulator): io.github.simple64.simple64
+            - Dolphin Emulator (GameCube/Wii/TriForce Emulator): org.DolphinEmu.dolphin-emu
+            - MelonDS (DS/DSi Emulator): net.kuribo64.melonDS
+            - Heroic (Epic Games Launcher): com.heroicgameslauncher.hgl
+            - Bottles (Windows App Manager): com.usebottles.bottles
+        Media Player:
+          description: User applications for media playback.
+          default: false
+          packages:
+            - Spotify: com.spotify.Client
+            - VLC (Media Player): org.videolan.VLC
+            - MPV (Media Player): io.mpv.MPV
+            - Strawberry (Music Player): org.strawberrymusicplayer.strawberry
+            - Mousai (Shazam alt.): io.github.seadve.Mousai
+            - Chronograph (lyrics embedder): io.github.dzheremi2.lrcmake-gtk
+        Media Production:
+          description: User applications for media production.
+          default: false
+          packages:
+            - GIMP: org.gimp.GIMP
+            - Krita: org.kde.krita
+            - Blender: org.blender.Blender
+            - Audacity: org.audacityteam.Audacity
+            - InkScape: org.inkscape.Inkscape
+            - HandBrake: fr.handbrake.ghb
+            - OBS: com.obsproject.Studio
+            - Kolour Paint: org.kde.kolourpaint
+        Downloader:
+          description: User applications for downloading.
+          default: false
+          packages:
+            - Qbittorrent (Torrent): org.qbittorrent.qBittorrent
+            - JDownloader: org.jdownloader.JDownloader
+            - Calibre (Ebook manager): com.calibre_ebook.calibre
+            - Parabolic (YouTube Downloader): org.nickvision.tubeconverter
+        Development:
+          description: User applications for development usage.
+          default: false
+          packages:
+            - DBeaver (Database): io.dbeaver.DBeaverCommunity
+            - GitKraken (Git Client): com.axosoft.GitKraken
+            - Android Studio: com.gproject.Studio
+            - Flatseal (Flatpak Permissions Manager): com.github.tchx84.Flatseal
+            - Extension Manager (GNOME Extensions): com.mattjakeman.ExtensionManager
+            - Remmina (Remote Desktop): org.remmina.Remmina
+            - Bruno (API client): com.usebruno.Bruno
+            - Podman Desktop: io.podman_desktop.PodmanDesktop
+         
+  final-screen:
+    source: yafti.screen.title
+    values:
+      title: "All done!"
+      icon: "/usr/share/pixmaps/gdm-watermark.png"
+      links:
+        - "Install More Applications":
+            run: /usr/bin/gnome-software
+        - "Website":
+            run: /usr/bin/xdg-open https://github.com/xposedrelay/vita
+      description: |
+        Vita is now installed and ready to use!
