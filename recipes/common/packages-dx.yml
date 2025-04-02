@@ -59,6 +59,7 @@ modules:
       - cockpit
       - Sunshine
       - libheif
+      - waydroid
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
