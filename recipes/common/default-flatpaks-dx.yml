@@ -4,31 +4,8 @@ modules:
     notify: true
     system:
       install:
-        - org.audacityteam.Audacity
-        - com.usebruno.Bruno
-        - io.dbeaver.DBeaverCommunity
         - ca.desrt.dconf-editor
         - org.gnome.Firmware
-        - com.heroicgameslauncher.hgl
-        - fr.handbrake.ghb
-        - org.inkscape.Inkscape
-        - org.kde.kolourpaint
-        - org.libreoffice.LibreOffice
-        - com.obsproject.Studio
-        - org.signal.Signal
-        - com.valvesoftware.Steam
-        - org.nickvision.tubeconverter
-        - org.videolan.VLC
-        - dev.vencord.Vesktop
-        - org.jdownloader.JDownloader
-        - com.usebottles.bottles
-        - org.remmina.Remmina
-        - com.spotify.Client
-        - page.kramo.Cartridges
-        - org.freedesktop.Piper
-        - org.strawberrymusicplayer.strawberry
-        - com.rtosta.zapzap
-        - re.sonny.Eloquent
         - org.gnome.Papers
         - org.gnome.Calculator
         - org.gnome.Loupe
@@ -37,11 +14,6 @@ modules:
         - org.gnome.SimpleScan
         - org.gnome.Snapshot
         - org.gnome.TextEditor
-        - com.github.tchx84.Flatseal
         - io.missioncenter.MissionCenter
         - com.mattjakeman.ExtensionManager
         - org.gnome.Weather
-        - com.calibre_ebook.calibre
-        - com.protonvpn.www
-        - com.axosoft.GitKraken
-        - com.brave.Browser
