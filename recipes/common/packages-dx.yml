@@ -60,6 +60,7 @@ modules:
       - Sunshine
       - libheif
       - waydroid
+      - lzip
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
