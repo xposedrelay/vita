@@ -17,9 +17,6 @@ modules:
       - epapirus-icon-theme
       - yaru-icon-theme
       - yaru-sound-theme
-      - telnet
-      - nmap
-      - netcat
       - smartmontools
       - libratbag-ratbagd
       - heimdall
@@ -27,14 +24,12 @@ modules:
       - epson-inkjet-printer-escpr2
       - file-roller
       - fontconfig-font-replacements
-      - fzf
       - openrgb-udev-rules
       - adw-gtk3-theme
       - gnome-epub-thumbnailer
       - gvfs-nfs
       - openssl
       - zstd
-      - wireguard-tools
       - virt-install
       - libvirt-daemon-config-network
       - libvirt-daemon-kvm
@@ -61,6 +56,7 @@ modules:
       - libheif
       - waydroid
       - lzip
+      - openrgb
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
