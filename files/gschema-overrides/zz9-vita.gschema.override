@@ -8,15 +8,19 @@ window-width=540
 
 [org.gnome.Ptyxis]
 audible-bell=true
-default-profile-uuid='2871e8027773ae74d6c87a5f659bbc74'
+default-profile-uuid='a0fd5a74c92907aaed56b66b67bce9db'
 interface-style='system'
 profile-uuids=['a0fd5a74c92907aaed56b66b67bce9db']
 restore-session=false
 restore-window-size=true
 window-size=(uint32 120, uint32 26)
 
-[org/gnome/Ptyxis/Profiles/2fe7d446df07b0be5f1a261a6793e246]
-palette='gnome'
+[org/gnome/shell/keybindings]
+screenshot=['<Shift><Control>i']
+
+[org/gnome/Ptyxis/Profiles/a0fd5a74c92907aaed56b66b67bce9db]
+palette='Catppuccin Frappé'
+bold-is-bright=true
 
 [org/gnome/control-center]
 last-panel='wifi'
