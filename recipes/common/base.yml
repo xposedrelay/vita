@@ -75,6 +75,7 @@ modules:
       # Audio stuff
       - alsa-firmware
       - pipewire-libs-extra
+      - libopenjph
       # Thumbnailing
       - ffmpegthumbnailer
       - ffmpeg
