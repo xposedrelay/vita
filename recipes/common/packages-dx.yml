@@ -45,7 +45,6 @@ modules:
       - fish
       - android-tools
       - distrobox
-      - power-profiles-daemon
       - docker-ce
       - docker-ce-cli
       - containerd.io
@@ -65,8 +64,6 @@ modules:
       - firefox
       - firefox-langpacks
       - gnome-system-monitor
-      - tuned
-      - tuned-ppd
       - gnome-classic-session
     replace:
       - from-repo: https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
