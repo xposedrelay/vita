@@ -65,6 +65,7 @@ screens:
             - Strawberry (Music Player): org.strawberrymusicplayer.strawberry
             - Mousai (Shazam alt.): io.github.seadve.Mousai
             - Chronograph (lyrics embedder): io.github.dzheremi2.lrcmake-gtk
+            - Shortwave (Radio): com.github.rafaelmardojai.Shadow
         Media Production:
           description: User applications for media production.
           default: false
