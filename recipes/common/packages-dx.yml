@@ -25,6 +25,3 @@ modules:
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
-    remove:
-      - solaar
-      - solaar-udev
