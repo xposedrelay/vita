@@ -27,9 +27,6 @@ modules:
       - gnome-epub-thumbnailer
       - cockpit
       - Sunshine
-      - libheif
-      - waydroid
-      - lzip
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
@@ -37,7 +34,6 @@ modules:
       - gnome-tour
       - firefox
       - firefox-langpacks
-      - devpod
       - gnome-tour
       - input-leap
       - input-remapper
