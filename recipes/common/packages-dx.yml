@@ -27,7 +27,6 @@ modules:
     optfix:
       - Bitwarden
     remove:
-      - gnome-tour
       - firefox
       - firefox-langpacks
       - gnome-tour
