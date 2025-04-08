@@ -1,4 +1,4 @@
-# vita &nbsp; [![bluebuild build badge](https://github.com/xposedrelay/vita/actions/workflows/build.yml/badge.svg)](https://github.com/xposedrelay/vita/actions/workflows/build.yml)
+# ![Vita isotipe](files/system/usr/share/pixmaps/gdm-watermark.png) &nbsp; [![bluebuild build badge](https://github.com/xposedrelay/vita/actions/workflows/build.yml/badge.svg)](https://github.com/xposedrelay/vita/actions/workflows/build.yml)
 
 This is my custom Fedora Silverblue image created with bluebuild tool. :3
 Use it if you like and if it fits your needs. Hope you like it and see you later. ;D 
@@ -39,4 +39,4 @@ cosign verify --key cosign.pub ghcr.io/xposedrelay/vita-dx
 
 ## Credits
 
-This is heavily inspired/forked from [mcubi](https://github.com/tecncr/mcubi) and [gidro-OS](https://github.com/fiftydinar/gidro-os/) <3
+This is heavily inspired/forked from [mcubi](https://github.com/tecncr/mcubi) <3
