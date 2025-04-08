@@ -1,5 +1,9 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 modules:
+  - type: akmods
+    base: bazzite
+    install:
+      - evdi
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/hyperreal/better_fonts/repo/fedora-%OS_VERSION%/hyperreal-better_fonts-fedora-%OS_VERSION%.repo
@@ -7,9 +11,6 @@ modules:
       - vscode.repo
       - https://download.docker.com/linux/fedora/docker-ce.repo
       - https://negativo17.org/repos/fedora-multimedia.repo
-    keys:
-      - https://packages.microsoft.com/keys/microsoft.asc
-      - https://download.docker.com/linux/fedora/gpg
     install:
       - papirus-icon-theme
       - papirus-icon-theme-light
@@ -22,40 +23,13 @@ modules:
       - heimdall
       - epson-inkjet-printer-escpr
       - epson-inkjet-printer-escpr2
-      - file-roller
       - fontconfig-font-replacements
-      - openrgb-udev-rules
-      - adw-gtk3-theme
       - gnome-epub-thumbnailer
-      - gvfs-nfs
-      - openssl
-      - zstd
-      - virt-install
-      - libvirt-daemon-config-network
-      - libvirt-daemon-kvm
-      - qemu-kvm
-      - virt-manager
-      - virt-viewer
-      - virt-top
-      - guestfs-tools
-      - code
-      - firewalld
-      - firewall-config
-      - gnome-tweaks
-      - fish
-      - android-tools
-      - distrobox
-      - docker-ce
-      - docker-ce-cli
-      - containerd.io
-      - docker-buildx-plugin
-      - docker-compose-plugin
       - cockpit
       - Sunshine
       - libheif
       - waydroid
       - lzip
-      - openrgb
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
       - Bitwarden
@@ -63,11 +37,9 @@ modules:
       - gnome-tour
       - firefox
       - firefox-langpacks
-      - gnome-system-monitor
-      - gnome-classic-session
-    replace:
-      - from-repo: https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
-        packages:
-          - mutter
-          - mutter-common
-          - gdm
+      - devpod
+      - gnome-tour
+      - input-leap
+      - input-remapper
+      - solaar
+      - solaar-udev
