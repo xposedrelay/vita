@@ -27,8 +27,6 @@ modules:
     optfix:
       - Bitwarden
     remove:
-      - firefox
-      - firefox-langpacks
       - gnome-tour
       - input-leap
       - input-remapper
