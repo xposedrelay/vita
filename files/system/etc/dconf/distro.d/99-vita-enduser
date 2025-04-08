@@ -119,15 +119,8 @@ folder-children=['Games', 'GamingUtilities', 'Utilities', 'Containers', 'Wine', 
 custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/']
 home=['<Super>e']
 
-# Ptyxis color palette is recognized as a relocatable schema
-[org.gnome.Ptyxis]
-window-size=(uint32 104, uint32 30)
-interface-style='system'
-restore-session=false
-restore-window-size=false
-audible-bell=false
-profile-uuids=['2871e8027773ae74d6c87a5f659bbc74']
-default-profile-uuid='2871e8027773ae74d6c87a5f659bbc74'
+[org.gnome.shell.keybindings]
+screenshot=['<Shift><Control>i']
 
 [org.gnome.Ptyxis.Profiles.2871e8027773ae74d6c87a5f659bbc74]
 custom-command='/usr/bin/fish'
