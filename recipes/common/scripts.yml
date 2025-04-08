@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://schema.blue-build.org/module-list-v1.json
 modules:
   - type: script
-    scripts:
-      - papirus-folders.sh
+    #scripts:
+    #   - papirus-folders.sh
     snippets:
       - systemctl enable cockpit.socket
