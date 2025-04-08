@@ -3,7 +3,6 @@ modules:
   - type: script
     snippets:
       - systemctl enable cockpit.socket
-      - chmod +x /usr/bin/papirus-folders
     scripts:
-       - papirus-folders.sh
+      - papirus-folders.sh
 
