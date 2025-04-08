@@ -1,7 +1,7 @@
 
 name: vita-dx
 description: Custom Atomic image inspired by @xposedrelay
-base-image: ghcr.io/ublue-os/bazzite-dx
+base-image: ghcr.io/ublue-os/bazzite-dx-gnome
 image-version: latest
 modules:
   - from-file: common/bluefin-dx.yml
