@@ -42,7 +42,6 @@ screens:
           description: User applications for gaming usage.
           default: false
           packages:
-            - Steam: com.valvesoftware.Steam
             - ProtonPlus (Steam Proton Manager): com.vysp3r.ProtonPlus
             - Sober (Roblox): org.vinegarhq.Sober            
             - Cartridges (Universal Game Launcher): hu.kramo.Cartridges            
