@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=Signal
-Comment=Signal silent autostart
-Icon=org.signal.Signal
-Exec=flatpak run org.signal.Signal --start-in-tray --use-tray-icon --use-wayland
