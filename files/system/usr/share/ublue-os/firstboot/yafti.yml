@@ -27,7 +27,7 @@ screens:
           default: false
           packages:
              - Thunderbird (Email): org.mozilla.Thunderbird
-             - Discord: dev.vencord.Vesktop
+             - Discord: com.discordapp.Discord
              - Telegram: org.telegram.desktop
              - Signal: org.signal.Signal
              - Element: im.riot.Riot
