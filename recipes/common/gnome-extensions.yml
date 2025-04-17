@@ -2,7 +2,7 @@
 modules:
   - type: gnome-extensions
     install:
-      - "615" # AppIndicator and KStatusNotifierItem Support
+     # - "615" # AppIndicator and KStatusNotifierItem Support
       - "779" # Clipboard Indicator
       - "1414" # Unblank lock screen
       - "3396" # Color Picker
