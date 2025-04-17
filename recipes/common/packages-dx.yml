@@ -17,7 +17,6 @@ modules:
       - libratbag-ratbagd
       - heimdall
       - epson-inkjet-printer-escpr
-      - epson-inkjet-printer-escpr2
       - fontconfig-font-replacements
       - gnome-epub-thumbnailer
       - cockpit
