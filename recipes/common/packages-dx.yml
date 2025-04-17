@@ -16,11 +16,9 @@ modules:
       - smartmontools
       - libratbag-ratbagd
       - heimdall
-      - epson-inkjet-printer-escpr
       - fontconfig-font-replacements
       - gnome-epub-thumbnailer
       - cockpit
-      - displaylink
       - Sunshine
       - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
     optfix:
