@@ -20,6 +20,3 @@ modules:
       - gnome-epub-thumbnailer
       - cockpit
       - Sunshine
-      - https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=rpm
-    optfix:
-      - Bitwarden
