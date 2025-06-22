@@ -1,6 +1,6 @@
 # ![Vita isotipe](files/system/usr/share/pixmaps/gdm-watermark.png) &nbsp; [![bluebuild build badge](https://github.com/xposedrelay/vita/actions/workflows/build.yml/badge.svg)](https://github.com/xposedrelay/vita/actions/workflows/build.yml)
 
-This is my custom Fedora Silverblue image created with bluebuild tool. :3
+This is my custom Bluefin image created with bluebuild tool. :3
 Use it if you like and if it fits your needs. Hope you like it and see you later. ;D 
 
 ## Installation
